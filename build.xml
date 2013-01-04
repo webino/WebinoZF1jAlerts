@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- phing -->
+<project name="WebinoModule" default="help">
+
+    <property file="${phing.dir}/build.properties"/>
+
+    <target name="build">
+        <exec command="webino-builder-zf1 devmod-test -Dpath=${phing.dir}"
+              checkreturn="true" logoutput="true"/>
+    </target>
+
+    <target name="help">
+        <echo msg="Welcome to Webino Module" level="warning"/>
+        <echo msg="by Webino, s. r. o."/>
+    </target>
+
+</project>
