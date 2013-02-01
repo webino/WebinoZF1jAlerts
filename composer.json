@@ -28,10 +28,5 @@
     "require-dev": {
         "webino/webino-zf1-application": "dev-master",
         "webino/webino-zf1-theme-demo-web": "dev-master"
-    },
-    "extra": {
-        "webino-module": {
-            "common": "webinozf1base"
-        }
     }
 }
