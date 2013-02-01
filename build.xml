@@ -2,10 +2,15 @@
 <!-- phing -->
 <project name="WebinoModule" default="help">
 
-    <property file="${phing.dir}/build.properties"/>
-
     <target name="build">
-        <exec command="webino-builder-zf1 devmod-test -Dpath=${phing.dir}"
+        <echo>Loading ...</echo>
+        <exec command="webino-builder-zf1 devmod-test -Dpath=${phing.dir} -Dconfigure.mail=1 -Dconfigure.user=1"
+              checkreturn="true" logoutput="true"/>
+    </target>
+
+    <target name="dev">
+        <echo>Loading ...</echo>
+        <exec command="webino-builder-zf1 devmod -Dpath=${phing.dir} -Dconfigure.mail=1 -Dconfigure.user=1"
               checkreturn="true" logoutput="true"/>
     </target>
 

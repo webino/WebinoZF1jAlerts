@@ -20,11 +20,6 @@
             "role": "Developer"
         }
     ],
-    "autoload": {
-        "psr-0": {
-            "WebinoCHANGEME": "src/"
-        }
-    },
     "require": {
         "php": ">=5.3.3",
         "webino/webino-zf1-composer-installer": "dev-master",
