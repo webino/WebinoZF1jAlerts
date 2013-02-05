@@ -1,1 +1,1 @@
-# Webino ZF1 module skeleton
+# Webino ZF1 jAlerts module
